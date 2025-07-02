@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body style="background-color: rgb(59, 170, 165)">
+    <nav style="background-color: bisque;">
+        <ul>
+            <li> <img src="iconos/mountain_mountains_excursion_icon_188544.ico" width="55px"></li>
+            <li class="item"><a href="../index.html">Linktree</a></li>
+            <li class="item"><a href="index.html"> Inicio</a></li>
+            <li class="item"><a href="Caminatas.html"> Caminatas </a></li>
+            <li class="item"><a href="sobremi.html">Sobre mi</a></li>
+            <li class="item"><a href="contacto.html">Contacto</a></li>
+            
+        </ul>
+    </nav>
+   
+
+    <form action="/enviar-reserva" method="POST">
+        <h2>Reservá tu caminata en Ushuaia</h2>
+        <label for="nombre">Nombre completo:</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required><br><br>
+
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required><br><br>
+
+        <label for="caminata">Elegí una caminata:</label><br>
+        <select id="caminata" name="caminata" required>
+            <option value="">--Seleccioná una opción--</option>
+            <option value="laguna_esmeralda">Laguna Esmeralda</option>
+            <option value="bahia_cucharita">Bahía Cucharita</option>
+            <option value="glaciar_vinciguerra">Glaciar Vinciguerra</option>
+            <option value="laguna_caminante">Laguna del Caminante</option>
+            <option value="laguna_belgica">Laguna Bélgica</option>
+        </select><br><br>
+
+        <p>Nivel de experiencia:</p>
+        <input type="radio" id="principiante" name="experiencia" value="principiante" required>
+        <label for="principiante">Principiante</label><br>
+
+        <input type="radio" id="intermedio" name="experiencia" value="intermedio">
+        <label for="intermedio">Intermedio</label><br>
+
+        <input type="radio" id="avanzado" name="experiencia" value="avanzado">
+        <label for="avanzado">Avanzado</label><br><br>
+
+        <label for="comentarios">Comentarios adicionales:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="¿Querés contarnos algo más?"></textarea><br><br>
+
+        <button type="submit">Enviar reserva</button>
+    </form>
+    <footer style="background-color: bisque;">
+      <ul>
+        <p> Conocé mi <a href="https://www.instagram.com/chiariibarone?igsh=MWdsaGZ0cXYyOHhiZQ%3D%3D&utm_source=qr">Instagram</a></p>
+          <p> Hecho por Chiara Valentina Barone </p>
+      </ul>
+  </footer>
+</body>
+</html>

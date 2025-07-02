@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styless.css">
+</head>
+<body style="background-color: rgb(59, 170, 165)">
+    <nav style="background-color: bisque;">
+        <ul>
+            <li> <img src="iconos/mountain_mountains_excursion_icon_188544.ico" width="55px"></li>
+            <li class="item"><a href="../index.html">Linktree</a></li>
+            <li class="item"><a href="index.html"> Inicio</a></li>
+            <li class="item"><a href="Caminatas.html"> Caminatas </a></li>
+            <li class="item"><a href="sobremi.html">Sobre mi</a></li>
+            <li class="item"><a href="contacto.html">Contacto</a></li>
+            
+        </ul>
+    </nav>
+       <section style="background-color: bisque;" class="hero">
+            <h1> Caminatas imperdibles</h1>
+            <p style="text-align: center;"> Esta es una seleccion de mis <strong>treckins favoritos</strong> para realizar en <strong> Ushuaia, Tierra del Fuego</strong>. Espero que les gusten tanto como a mi!</p>
+       </section>
+     <main>
+        <section class="posteos">
+            <article style="width: 97vh; align-items: center; text-align: center; margin-inline: 30px;">
+                <h1 style="text-align: left;"> Laguna Esmeralda 🏞️</h1>
+                <img src="imagenes/laguna esmeralda.jpg" alt="imagen de ejemplo">
+                <p style="margin-inline: 150px;"> Un rincón mágico de aguas turquesas rodeado de montañas y bosques fueguinos. Ideal para conectar con la naturaleza en una caminata inolvidable.</p>
+                <a href="Posteo1.html"> Leer mas</a>
+            </article>
+            <article style="width: 97vh; text-align: center; align-items: center; margin-inline: 30px;">
+                <h1 style="text-align: left;"> Glaciar Vinciguerra ❄️ </h1>
+                <img src="imagenes/vinciguerra.jpg" alt="imagen de ejemplo">
+                <p style="margin-inline: 150px;"> Una aventura entre montañas, hielo y turba. El glaciar sorprende con su inmensidad y un entorno salvaje que parece de otro planeta.</p>
+                <a href="Posteo2.html"> Leer mas</a>
+            </article>
+            <article style="width: 97vh; text-align: center; align-items: center; margin-inline: 30px;">
+                <h1 style="text-align: left;"> Laguna del Caminante ⛰️</h1>
+                <img src="imagenes/portada-laguna-del-caminante-2 2.jpg" alt="imagen de ejemplo">
+                <p style="margin-inline: 150px;"> Destino elegido por los amantes del trekking, esta laguna de altura regala vistas panorámicas y la emoción de llegar tras una caminata desafiante.</p>
+                <a href="Posteo3.html"> Leer mas</a>
+            </article>
+            <article style="width: 97vh; text-align: center; align-items: center; margin-inline: 30px;">
+                <h1 style="text-align: left;"> Bahía Cucharita ☀️</h1>
+                <img src="imagenes/bahia cucharita.jpg.jpg" alt="imagen de ejemplo">
+                <p style="margin-inline: 150px;"> Pequeña y encantadora, esta bahía ofrece una vista única del canal Beagle y un entorno perfecto para relajarse frente al mar austral.</p>
+                <a href="Posteo4.html"> Leer mas</a>
+            </article>
+            <article style="width: 97vh; text-align: center; align-items: center; margin-inline: 30px;">
+                <h1 style="text-align: left;"> Laguna Bélgica 🧗🏼 </h1>
+                <img src="imagenes/laguna belgica.jpg" alt="imagen de ejemplo">
+                <p style="margin-inline: 120px;"> Escondida entre cerros y valles, esta laguna es un tesoro secreto para quienes buscan paisajes solitarios y pura tranquilidad.</p>
+                <a href="Posteo5.html"> Leer mas</a>
+            </article>
+        </section>
+        
+        
+    </main>
+
+    <form action="/enviar-reserva" method="POST" style="margin-inline: 30px;">
+        <h2>Reservá tu caminata en Ushuaia</h2>
+        <label for="nombre">Nombre completo:</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required><br><br>
+
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required><br><br>
+
+        <label for="caminata">Elegí una caminata:</label><br>
+        <select id="caminata" name="caminata" required>
+            <option value="">--Seleccioná una opción--</option>
+            <option value="laguna_esmeralda">Laguna Esmeralda</option>
+            <option value="bahia_cucharita">Bahía Cucharita</option>
+            <option value="glaciar_vinciguerra">Glaciar Vinciguerra</option>
+            <option value="laguna_caminante">Laguna del Caminante</option>
+            <option value="laguna_belgica">Laguna Bélgica</option>
+        </select><br><br>
+
+        <p>Nivel de experiencia:</p>
+        <input type="radio" id="principiante" name="experiencia" value="principiante" required>
+        <label for="principiante">Principiante</label><br>
+
+        <input type="radio" id="intermedio" name="experiencia" value="intermedio">
+        <label for="intermedio">Intermedio</label><br>
+
+        <input type="radio" id="avanzado" name="experiencia" value="avanzado">
+        <label for="avanzado">Avanzado</label><br><br>
+
+        <label for="comentarios">Comentarios adicionales:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="¿Querés contarnos algo más?"></textarea><br><br>
+
+        <button type="submit">Enviar reserva</button>
+    </form>
+    <footer style="background-color: bisque;">
+      <ul>
+        <p> Conocé mi <a href="https://www.instagram.com/chiariibarone?igsh=MWdsaGZ0cXYyOHhiZQ%3D%3D&utm_source=qr">Instagram</a></p>
+          <p> Hecho por Chiara Valentina Barone </p>
+      </ul>
+  </footer>
+</body>
+</html>

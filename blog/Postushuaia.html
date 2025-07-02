@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body style="background-color: rgb(59, 170, 165)">
+    <nav style="background-color: bisque;">
+        <ul>
+            <li> <img src="iconos/mountain_mountains_excursion_icon_188544.ico" width="55px"></li>
+            <li class="item"><a href="../index.html">Linktree</a></li>
+            <li class="item"><a href="index.html"> Inicio</a></li>
+            <li class="item"><a href="Caminatas.html"> Caminatas </a></li>
+            <li class="item"><a href="sobremi.html">Sobre mi</a></li>
+            <li class="item"><a href="contacto.html">Contacto</a></li>
+            
+        </ul>
+    </nav>
+       <section style="background-color: bisque;" class="hero">
+            <h1> Bienvenidos a mi Blog</h1>
+            <p style="text-align: center;"> Este espacio nace del amor por la <strong>aventura, la naturaleza y los paisajes únicos de Tierra del Fuego</strong>. Acá vas a encontrar <strong>recorridos, fotos y experiencias</strong> de lugares increíbles para conocer y visitar. Si te gusta caminar, descubrir y sentirte parte del entorno, este blog es para vos.</p>
+       </section>
+     <main>
+        <section class="posteos">
+            <article>
+                <h1 style="text-align: left;"> Conocé Ushuaia  </h1>
+                <img src="imagenes/PORTADAS-BLOG2-5.jpg" alt="imagen de ejemplo">
+                <p> Ushuaia es la ciudad más austral del planeta y la puerta de entrada a algunos de los paisajes más espectaculares y salvajes del mundo. Rodeada por la imponente cordillera de los Andes y las frías aguas del Canal Beagle, esta ciudad combina historia, aventura y una naturaleza que asombra en cada rincón.
+                <br><br>
+                Su nombre proviene del idioma yagán: ushuaia significa “bahía que mira al poniente”. Originalmente habitada por pueblos originarios como los yámanas y los selk'nam, la región fue testigo de una rica vida cultural y espiritual mucho antes de la llegada de los europeos.
+                <br><br>
+                Durante décadas, Ushuaia fue una ciudad aislada, conectada con el resto del país principalmente por vía marítima. Sin embargo, a partir de los años ‘70 y ‘80 comenzó a crecer gracias a políticas de incentivo industrial y al auge del turismo. Hoy, es un punto clave para los viajeros que buscan explorar Tierra del Fuego, realizar excursiones al Parque Nacional, navegar el Canal Beagle o partir en crucero rumbo a la Antártida.
+                <br><br>
+                Este blog es un homenaje a este rincón del mundo que me vio nacer, un espacio donde comparto experiencias, caminatas, paisajes y secretos que hacen de Ushuaia un lugar verdaderamente único.
+                </p>
+                
+                <a href="index.html">Volver al inicio</a>
+            </article>
+            
+        </section>
+        <aside class="perfil">
+            <div class="perfil">
+                <img style="width: 200px; border-radius: 100px; ;" src="imagenes/IMG_PERFIL.jpg" alt="IMAGEN MIA">
+                <h2 style="text-align: center;     font-family: Verdana, Geneva, Tahoma, sans-serif; color: rgb(24, 47, 67);"> Chiara Barone </h2>
+                <P style="margin-left: 10px; margin-bottom: 20px;"> Hola soy Chiara! Tengo 21 años y nací en Ushuaia, Tierra del Fuego. Amo mi ciudad y por eso siempre busco compartirla con los demás. Soy una persona aventurera y extrovertida, y es por eso que espero transmitir mi amor por la aventura con ustedes.</P>
+                <hr>
+            </div>
+            <div class="redes">
+                <h2 style="margin-left: 10px; font-family: Verdana, Geneva, Tahoma, sans-serif; color: rgb(24, 47, 67);"> Redes </h2>
+                <p style="margin-left: 10px;"><a href="https://www.instagram.com/chiariibarone?igsh=MWdsaGZ0cXYyOHhiZQ%3D%3D&utm_source=qr">Instagram</a></p>
+                <p style="margin-left: 10px;"><a href="https://www.linkedin.com/in/chiara-barone21/">Linkedin</a></p>
+                <p style="margin-left: 10px;"><a href="https://www.tiktok.com/@chiariibarone?lang=es-419">TikTok</a></p>
+                <hr style="margin-top: 20px;">
+                
+            </div>
+            <div class="suscripcion">
+                <h2 style="margin-left: 10px;     font-family: Verdana, Geneva, Tahoma, sans-serif; color: rgb(24, 47, 67);"> Suscribete </h2>
+                <p style="margin-left: 10px;"> Unite para actualizarte de las novedades! </p>
+                <input type="text">
+                <button>Enviar</button>
+                <hr>
+            </div>
+            <div class="posteos">
+                <ul style="margin-left: 10px;">
+                    <li><a href="Posteo1.html">Laguna Esmeralda</a></li>
+                    <li><a href="Posteo2.html">Glaciar vinciguerra</a></li>
+                    <li><a href="Posteo3.html">Laguna del Caminante</a></li>
+                    <li><a href="Posteo4.html">Bahía Cucharita</a></li>
+                    <li><a href="Posteo5.html">Laguna Bélgica</a></li>
+                </ul>
+            </div>
+        </aside>
+        
+    </main>
+
+    <form action="/enviar-reserva" method="POST">
+        <h2>Reservá tu caminata en Ushuaia</h2>
+        <label for="nombre">Nombre completo:</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej: Juan Pérez" required><br><br>
+
+        <label for="email">Correo electrónico:</label><br>
+        <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required><br><br>
+
+        <label for="caminata">Elegí una caminata:</label><br>
+        <select id="caminata" name="caminata" required>
+            <option value="">--Seleccioná una opción--</option>
+            <option value="laguna_esmeralda">Laguna Esmeralda</option>
+            <option value="bahia_cucharita">Bahía Cucharita</option>
+            <option value="glaciar_vinciguerra">Glaciar Vinciguerra</option>
+            <option value="laguna_caminante">Laguna del Caminante</option>
+            <option value="laguna_belgica">Laguna Bélgica</option>
+        </select><br><br>
+
+        <p>Nivel de experiencia:</p>
+        <input type="radio" id="principiante" name="experiencia" value="principiante" required>
+        <label for="principiante">Principiante</label><br>
+
+        <input type="radio" id="intermedio" name="experiencia" value="intermedio">
+        <label for="intermedio">Intermedio</label><br>
+
+        <input type="radio" id="avanzado" name="experiencia" value="avanzado">
+        <label for="avanzado">Avanzado</label><br><br>
+
+        <label for="comentarios">Comentarios adicionales:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="¿Querés contarnos algo más?"></textarea><br><br>
+
+        <button type="submit">Enviar reserva</button>
+    </form>
+    <footer style="background-color: bisque;">
+      <ul>
+        <p> Conocé mi <a href="https://www.instagram.com/chiariibarone?igsh=MWdsaGZ0cXYyOHhiZQ%3D%3D&utm_source=qr">Instagram</a></p>
+          <p> Hecho por Chiara Valentina Barone </p>
+      </ul>
+  </footer>
+</body>
+</html>
