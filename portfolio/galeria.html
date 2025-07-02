@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería Lightbox</title>
+  <link rel="stylesheet" href="galeria.css">
+</head>
+<body>
+    <header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Linktree</a></li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="index.html/#sobremi">Sobre mí</a></li>
+        <li><a href="index.html/#proyectos">Proyectos</a></li>
+        <li><a href="index.html/#habilidades">Habilidades</a></li>
+        <li><a href="index.html/#contacto">Contacto</a></li>
+    </ul>
+    </nav>
+  </header>
+
+  <main class="contenedor">
+    <h1>📸 Mi Galería</h1>
+    <div class="galeria-grid">
+      <img src="imagenes/IMG_1.HEIC" alt="Imagen 1" >
+      <img src="imagenes/IMG_2.HEIC" alt="Imagen 2" >
+      <img src="imagenes/IMG_3.jpg" alt="Imagen 3" >
+      <img src="imagenes/IMG_4.jpg" alt="Imagen 4" >
+      <img src="imagenes/IMG_5.HEIC" alt="Imagen 5" >
+      <img src="imagenes/IMG_6.heic" alt="Imagen 6" >
+      <img src="imagenes/IMG_7.jpg" alt="Imagen 7" >
+      <img src="imagenes/IMG_8.HEIC" alt="Imagen 8" >
+      <img src="imagenes/IMG_10.heic" alt="Imagen 9" >
+      <img src="imagenes/IMG_11.HEIC" alt="Imagen 10" >
+      <img src="imagenes/IMG_12.jpg" alt="Imagen 11" >
+      <img src="imagenes/IMG_9.jpg" alt="Imagen 12">
+    </div>
+  </main>
+
+  
+  <div id="lightbox" class="lightbox oculto">
+    <span class="cerrar" onclick="cerrarLightbox()">✖</span>
+    <img id="img-ampliada" src="" alt="">
+    <span class="flecha izq" onclick="cambiarImagen(-1)">❮</span>
+    <span class="flecha der" onclick="cambiarImagen(1)">❯</span>
+  </div>
+<a href="index.html" class="boton-volver">Volver al inicio</a>
+  <script src="galeria.js"></script>
+</body>
+</html>

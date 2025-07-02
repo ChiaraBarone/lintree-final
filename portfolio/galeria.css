@@ -1,0 +1,149 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+  margin-top: 0%;
+  margin-inline: 0px;
+}
+
+header {
+  background: #111;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  height: 10px;
+
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+
+}
+
+nav ul li a:hover {
+  color: #f39c12;
+}
+
+
+
+body main {
+  font-family: 'Poppins', sans-serif;
+  background: #fdfdfd;
+  margin: 0;
+  padding: 20px;
+}
+
+.contenedor {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.galeria-grid img {
+  width: 100%;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.galeria-grid img:hover {
+  transform: scale(1.05);
+}
+
+.lightbox {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80vh;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255,255,255,0.2);
+}
+
+.flecha {
+  position: absolute;
+  top: 50%;
+  font-size: 2.5rem;
+  color: #f39c12;
+  cursor: pointer;
+  padding: 10px;
+  user-select: none;
+  transition: transform 0.3s;
+}
+
+.flecha:hover {
+  transform: scale(1.2);
+}
+
+.izq {
+  left: 40px;
+}
+
+.der {
+  right: 40px;
+}
+
+.cerrar {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 2rem;
+  color: #f39c12;
+  cursor: pointer;
+}
+
+.oculto {
+  display: none;
+}
+
+.boton-volver {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #ff9800; /* naranja */
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease, transform 0.2s;
+  margin-top: 30px;
+  margin-inline: 350px;
+}
+
+.boton-volver:hover {
+  background-color: #fb8c00;
+  transform: scale(1.05);
+}
